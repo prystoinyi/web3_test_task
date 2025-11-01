@@ -1,0 +1,5 @@
+@reference "../../../../app/globals.css";
+
+.btn {
+	@apply px-2 py-1 bg-(--color-primary) rounded-md;
+}

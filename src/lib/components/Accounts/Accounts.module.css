@@ -1,0 +1,33 @@
+@reference '../../../app/globals.css';
+
+.accounts {
+	@apply flex flex-col w-full
+	       p-3
+		   rounded-xl
+		   overflow-x-auto
+		   bg-white;
+
+	h1 {
+		@apply text-2xl;
+	}
+
+	table {
+		@apply text-lg mt-3;
+
+		tr:not(:last-child) {
+			@apply border-b border-gray-400;
+		}
+
+		thead th:first-child {
+			@apply w-6 pr-2;
+		}
+
+		tbody tr {
+			@apply text-end;
+
+			td:first-child {
+				@apply text-center pr-2;
+			}
+		}
+	}
+}
